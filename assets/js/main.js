@@ -3,9 +3,11 @@
 // - Mobile nav toggle
 // - Reveal on scroll animations
 // - Parallax hero
+// - Smooth scroll for anchor links
 // - Promo countdown timers
 // - Gallery filter + lightbox
 // - Testimonial slider
+// - Before/After drag slider
 
 (function () {
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
@@ -34,6 +36,24 @@
     });
   }
 
+  // Smooth scroll for anchor links
+  const scrollLinks = $$('.scroll');
+  function smoothScrollTo(targetId) {
+    const el = $(targetId);
+    if (!el) return;
+    const y = el.getBoundingClientRect().top + window.scrollY - 64; // header offset
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+  scrollLinks.forEach((a) => {
+    a.addEventListener('click', (e) => {
+      const href = a.getAttribute('href') || '';
+      if (href.startsWith('#') && href.length > 1) {
+        e.preventDefault();
+        smoothScrollTo(href);
+      }
+    });
+  });
+
   // Reveal on scroll
   const revealEls = $$('.reveal');
   const io = new IntersectionObserver((entries) => {
@@ -60,6 +80,7 @@
   const countdowns = $$('.countdown');
   function updateCountdown(el) {
     const deadline = new Date(el.dataset.deadline).getTime();
+    if (isNaN(deadline)) return;
     const now = Date.now();
     const diff = Math.max(0, deadline - now);
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -94,12 +115,14 @@
   const lightboxCaption = $('#lightboxCaption');
   const lightboxClose = $('.lightbox-close');
   function openLightbox(src, caption) {
+    if (!lightbox || !lightboxImg || !lightboxCaption) return;
     lightboxImg.src = src;
     lightboxCaption.textContent = caption || '';
     lightbox.classList.add('open');
     lightbox.setAttribute('aria-hidden', 'false');
   }
   function closeLightbox() {
+    if (!lightbox || !lightboxImg) return;
     lightbox.classList.remove('open');
     lightbox.setAttribute('aria-hidden', 'true');
     lightboxImg.src = '';
@@ -108,7 +131,7 @@
     $$('.gallery-item img').forEach((img) => {
       img.addEventListener('click', () => openLightbox(img.src, img.alt));
     });
-    lightboxClose.addEventListener('click', closeLightbox);
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
     lightbox.addEventListener('click', (e) => {
       if (e.target === lightbox) closeLightbox();
     });
@@ -136,6 +159,41 @@
     function next() { idx = (idx + 1) % slides.length; render(); }
     render();
     setInterval(next, 5000);
+  }
+
+  // Before/After drag slider
+  const baWrap = $('.ba-wrapper');
+  const baAfter = $('.ba-after');
+  const baHandle = $('#baHandle');
+  if (baWrap && baAfter && baHandle) {
+    const bounds = () => baWrap.getBoundingClientRect();
+    const setX = (clientX) => {
+      const b = bounds();
+      let x = Math.max(b.left, Math.min(clientX, b.right));
+      const pct = (x - b.left) / b.width; // 0..1
+      baAfter.style.clipPath = `inset(0 ${100 - pct * 100}% 0 0)`;
+      baAfter.style.width = '100%';
+      baHandle.style.left = `${pct * 100}%`;
+    };
+    const start = (e) => {
+      e.preventDefault();
+      const move = (ev) => setX((ev.touches?.[0] || ev).clientX);
+      const stop = () => {
+        window.removeEventListener('mousemove', move);
+        window.removeEventListener('touchmove', move);
+        window.removeEventListener('mouseup', stop);
+        window.removeEventListener('touchend', stop);
+      };
+      window.addEventListener('mousemove', move, { passive: false });
+      window.addEventListener('touchmove', move, { passive: false });
+      window.addEventListener('mouseup', stop);
+      window.addEventListener('touchend', stop);
+    };
+    baHandle.addEventListener('mousedown', start);
+    baHandle.addEventListener('touchstart', start, { passive: false });
+    // Init center
+    setX(bounds().left + bounds().width / 2);
+    window.addEventListener('resize', () => setX(bounds().left + bounds().width / 2));
   }
 
   // Current year

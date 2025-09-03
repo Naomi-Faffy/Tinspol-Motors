@@ -5,188 +5,316 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tinspol Motors — Drive Precision. Live Exquisite.</title>
-  <meta name="description" content="Premium automotive repairs & servicing in Zimbabwe. Engine, suspension, tyres, panel beating, detailing, and genuine spares." />
+  <meta name="description" content="Tinspol Motors — premium automotive repairs, tyres, spares & bodywork. Engine, suspension, diagnostics, panel beating, detailing." />
   <meta name="theme-color" content="#E30613" />
 
-  <!-- Fonts -->
+  <!-- Fonts: Exquisite style -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="icon" href="assets/img/favicon.png" />
 </head>
 <body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-wrap">
-      <div class="brand">
-        <div class="brand-mark">TM</div>
-        <div class="brand-name">Tinspol Motors</div>
-      </div>
+  <!-- WhatsApp Floating Chat -->
+  <div class="whatsapp-chat">
+    <a href="https://wa.me/263770000000?text=Hello%20Tinspol%20Motors%2C%20I%20would%20like%20to%20book%20a%20service." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="#home" aria-label="Tinspol Motors">
+        <img src="assets/img/logo.png" alt="Tinspol Motors" onerror="this.style.display='none'" />
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" aria-hidden="true"><span></span><span></span><span></span></div>
     </div>
-  </header>
+  </nav>
 
   <!-- Hero -->
-  <section class="hero">
+  <section id="home" class="hero">
+    <div class="hero-video-container">
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/img/hero-poster.jpg">
+        <source src="assets/video/hero.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="hero-line-1">Drive Precision.</span>
+        <span class="hero-line-2">Live Exquisite.</span>
+      </h1>
+      <p class="hero-subtitle">Premium automotive servicing engineered for performance, finished to perfection.</p>
+      <div class="hero-buttons">
+        <a class="cta-button primary" href="#contact">Book a Service</a>
+        <a class="cta-button secondary" href="#collection">Explore Services</a>
+      </div>
+    </div>
+    <div class="scroll-indicator"><div class="scroll-arrow"></div></div>
+  </section>
+
+  <!-- Collection (cards) -->
+  <section id="collection" class="collection">
     <div class="container">
-      <h1 class="hero-title">Drive Precision. Live Exquisite.</h1>
-      <p class="hero-sub">Experience premium automotive servicing — engineered for performance, finished to perfection.</p>
+      <header class="section-header">
+        <h2 class="section-title">Current Collection</h2>
+        <p class="section-subtitle">Fresh arrivals and premium services available at Tinspol Motors</p>
+      </header>
+
+      <div class="collection-grid">
+        <!-- Card 1 -->
+        <article class="car-card">
+          <div class="car-image">
+            <img src="assets/img/workshop-poster.jpg" alt="Engine Diagnostics" />
+            <div class="car-overlay"><button class="view-details">View Details</button></div>
+          </div>
+          <div class="car-info">
+            <h3 class="car-model">Engine Diagnostics & Rebuilds</h3>
+            <div class="car-class">Sports Car Excellence</div>
+            <div class="car-price">Available on Request</div>
+            <button class="car-action">Schedule Service</button>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="car-card">
+          <div class="car-image">
+            <img src="assets/img/after.jpg" alt="Panel Beating" />
+            <div class="car-overlay"><button class="view-details">View Details</button></div>
+          </div>
+          <div class="car-info">
+            <h3 class="car-model">Panel Beating & Paint</h3>
+            <div class="car-class">Luxury & Power</div>
+            <div class="car-price">Available on Request</div>
+            <button class="car-action">Schedule Service</button>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="car-card">
+          <div class="car-image">
+            <img src="assets/img/before.jpg" alt="Body Restoration" />
+            <div class="car-overlay"><button class="view-details">View Details</button></div>
+          </div>
+          <div class="car-info">
+            <h3 class="car-model">Body Restoration</h3>
+            <div class="car-class">Factory Finish</div>
+            <div class="car-price">Available on Request</div>
+            <button class="car-action">Schedule Service</button>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="car-card">
+          <div class="car-image">
+            <img src="assets/img/placeholders.svg" alt="Suspension & Steering" />
+            <div class="car-overlay"><button class="view-details">View Details</button></div>
+          </div>
+          <div class="car-info">
+            <h3 class="car-model">Suspension & Steering</h3>
+            <div class="car-class">Luxury Ride Comfort</div>
+            <div class="car-price">Available on Request</div>
+            <button class="car-action">Schedule Service</button>
+          </div>
+        </article>
+        <!-- Card 5 -->
+        <article class="car-card">
+          <div class="car-image">
+            <img src="assets/img/placeholders.svg" alt="Tyre Fitment & Balancing" />
+            <div class="car-overlay"><button class="view-details">View Details</button></div>
+          </div>
+          <div class="car-info">
+            <h3 class="car-model">Tyre Fitment & Balancing</h3>
+            <div class="car-class">Performance & Safety</div>
+            <div class="car-price">Available on Request</div>
+            <button class="car-action">Schedule Service</button>
+          </div>
+        </article>
+        <!-- Card 6 -->
+        <article class="car-card">
+          <div class="car-image">
+            <img src="assets/img/placeholders.svg" alt="Detailing & Protection" />
+            <div class="car-overlay"><button class="view-details">View Details</button></div>
+          </div>
+          <div class="car-info">
+            <h3 class="car-model">Detailing & Protection</h3>
+            <div class="car-class">Elite Finish</div>
+            <div class="car-price">Available on Request</div>
+            <button class="car-action">Schedule Service</button>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- Showcase (Exquisite-style grid cards) -->
-  <main class="container section">
-    <div class="grid">
-      <!-- Card 1 -->
-      <article class="card">
-        <img src="assets/img/hero-poster.jpg" alt="Precision Engine Diagnostics" />
-        <div class="card-body">
-          <h3>Engine Diagnostics & Rebuilds</h3>
-          <p>Sports Car Excellence</p>
-          <span class="tag">Available on Request</span>
+  <!-- Services (parallax glass cards) -->
+  <section id="services" class="services">
+    <div class="services-overlay">
+      <header class="services-header">
+        <h2 class="services-main-title">Premium Services</h2>
+        <p class="services-subtitle">Precision engineering. White-glove care.</p>
+      </header>
+      <div class="services-grid">
+        <div class="glass-card">
+          <div class="glass-icon">🔧</div>
+          <h3 class="glass-card-title">Engine & Diagnostics</h3>
+          <p class="glass-card-description">Advanced diagnostics, rebuilds, timing, performance tuning.</p>
         </div>
-      </article>
-      <!-- Card 2 -->
-      <article class="card">
-        <img src="assets/img/workshop-poster.jpg" alt="Suspension & Steering" />
-        <div class="card-body">
-          <h3>Suspension & Steering</h3>
-          <p>Luxury Ride Comfort</p>
-          <span class="tag">Available on Request</span>
+        <div class="glass-card">
+          <div class="glass-icon">🛠️</div>
+          <h3 class="glass-card-title">Panel Beating</h3>
+          <p class="glass-card-description">Bodywork restoration, OEM paint matching, dent removal.</p>
         </div>
-      </article>
-      <!-- Card 3 -->
-      <article class="card">
-        <img src="assets/img/before.jpg" alt="Panel Beating Before" />
-        <div class="card-body">
-          <h3>Panel Beating & Paint</h3>
-          <p>Factory Finish</p>
-          <span class="tag">Available on Request</span>
+        <div class="glass-card">
+          <div class="glass-icon">🛞</div>
+          <h3 class="glass-card-title">Tyres & Alignment</h3>
+          <p class="glass-card-description">Fitments, balancing, rotations, alignment coordination.</p>
         </div>
-      </article>
-      <!-- Card 4 -->
-      <article class="card">
-        <img src="assets/img/after.jpg" alt="Panel Beating After" />
-        <div class="card-body">
-          <h3>Body Restoration</h3>
-          <p>Luxury & Power</p>
-          <span class="tag">Available on Request</span>
-        </div>
-      </article>
-      <!-- Card 5 -->
-      <article class="card">
-        <img src="assets/img/placeholders.svg" alt="Tyre Fitment & Balancing" />
-        <div class="card-body">
-          <h3>Tyre Fitment & Balancing</h3>
-          <p>Performance & Safety</p>
-          <span class="tag">Available on Request</span>
-        </div>
-      </article>
-      <!-- Card 6 -->
-      <article class="card">
-        <img src="assets/img/placeholders.svg" alt="Detailing & Protection" />
-        <div class="card-body">
-          <h3>Detailing & Protection</h3>
-          <p>Elite Finish</p>
-          <span class="tag">Available on Request</span>
-        </div>
-      </article>
-      <!-- Card 7 -->
-      <article class="card">
-        <img src="assets/img/placeholders.svg" alt="Genuine Spares" />
-        <div class="card-body">
-          <h3>Genuine OEM Spares</h3>
-          <p>Guaranteed Quality</p>
-          <span class="tag">Available on Request</span>
-        </div>
-      </article>
-      <!-- Card 8 -->
-      <article class="card">
-        <img src="assets/img/placeholders.svg" alt="Full Service Packages" />
-        <div class="card-body">
-          <h3>Full Service Packages</h3>
-          <p>Tailored to Your Vehicle</p>
-          <span class="tag">Available on Request</span>
-        </div>
-      </article>
+      </div>
     </div>
-  </main>
-
-  <!-- Three Feature Blocks (mirrors Exquisite info blocks) -->
-  <section class="container section features">
-    <article>
-      <h3>Certified Expertise</h3>
-      <p>Access to certified technicians using genuine OEM parts and advanced diagnostics. Every repair targets factory standards.</p>
-    </article>
-    <article>
-      <h3>Tailored Services</h3>
-      <p>Personalized consultation, prioritized scheduling, and white-glove service. Pick-up and delivery available on request.</p>
-    </article>
-    <article>
-      <h3>Trusted Nationwide</h3>
-      <p>Serving discerning clients across Zimbabwe with transparent quotes, warranty-backed work, and reliable turnaround times.</p>
-    </article>
   </section>
 
-  <!-- Testimonials (short quotes like reference) -->
-  <section class="container section quotes">
-    <blockquote>
-      <p>“The car looks factory fresh. Outstanding service!”</p>
-      <footer>— Tariro M.</footer>
-    </blockquote>
-    <blockquote>
-      <p>“Professional, transparent, and fast turnaround.”</p>
-      <footer>— Bheki N.</footer>
-    </blockquote>
-    <blockquote>
-      <p>“Genuine parts with great workmanship. Highly recommend.”</p>
-      <footer>— Nyasha K.</footer>
-    </blockquote>
+  <!-- Trust + Testimonials (condensed) -->
+  <section id="about" class="trust">
+    <div class="trust-overlay">
+      <header class="trust-header">
+        <h2 class="trust-main-title">Trusted Excellence</h2>
+        <p class="trust-subtitle">Endorsed by discerning clients for precision and reliability.</p>
+      </header>
+      <div class="testimonials-glass-grid">
+        <div class="testimonial-glass-card">
+          <div class="testimonial-quote">⭐️⭐️⭐️⭐️⭐️</div>
+          <div class="testimonial-text">“The car looks factory fresh. Outstanding service!”</div>
+          <div class="testimonial-author"><strong>Tariro M.</strong><span>Client</span></div>
+        </div>
+        <div class="testimonial-glass-card">
+          <div class="testimonial-quote">⭐️⭐️⭐️⭐️⭐️</div>
+          <div class="testimonial-text">“Professional, transparent, and fast turnaround.”</div>
+          <div class="testimonial-author"><strong>Bheki N.</strong><span>Client</span></div>
+        </div>
+        <div class="testimonial-glass-card">
+          <div class="testimonial-quote">⭐️⭐️⭐️⭐️⭐️</div>
+          <div class="testimonial-text">“Genuine parts with great workmanship. Highly recommend.”</div>
+          <div class="testimonial-author"><strong>Nyasha K.</strong><span>Client</span></div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Contact & Map (kept from Tinspol) -->
-  <section id="contact" class="container section contact">
-    <div class="contact-grid">
-      <form class="contact-form" aria-label="Contact form">
-        <h2>Contact & Location</h2>
-        <div class="field">
-          <input type="text" id="name" placeholder=" " required />
-          <label for="name">Full Name</label>
+  <!-- Contact (Exquisite glass layout) -->
+  <section id="contact" class="contact">
+    <div class="contact-overlay">
+      <header class="contact-header">
+        <h2 class="contact-main-title">Begin Your Journey</h2>
+        <p class="contact-subtitle">Experience premium service with personalized care</p>
+      </header>
+      <div class="contact-glass-grid container">
+        <!-- Info -->
+        <div class="contact-info-glass">
+          <div class="contact-glass-header">
+            <div class="contact-icon">📞</div>
+            <h3 class="contact-glass-title">Tinspol Motors</h3>
+            <p class="contact-glass-description">Fast quotes, genuine parts, and warranty-backed workmanship.</p>
+          </div>
+          <div class="contact-details-glass">
+            <div class="contact-item-glass">
+              <div class="contact-item-icon">📱</div>
+              <div class="contact-item-content">
+                <div class="contact-label">Phone</div>
+                <div class="contact-value">+263 77 000 0000</div>
+              </div>
+            </div>
+            <div class="contact-item-glass">
+              <div class="contact-item-icon">💬</div>
+              <div class="contact-item-content">
+                <div class="contact-label">WhatsApp</div>
+                <div class="contact-value">wa.me/263770000000</div>
+              </div>
+            </div>
+            <div class="contact-item-glass">
+              <div class="contact-item-icon">✉️</div>
+              <div class="contact-item-content">
+                <div class="contact-label">Email</div>
+                <div class="contact-value">info@tinspolmotors.co.zw</div>
+              </div>
+            </div>
+            <div class="contact-item-glass">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-content">
+                <div class="contact-label">Location</div>
+                <div class="contact-value">Harare, Zimbabwe</div>
+              </div>
+            </div>
+          </div>
+          <div class="social-links-glass">
+            <a class="social-glass-link" href="#" aria-label="Facebook">f</a>
+            <a class="social-glass-link" href="#" aria-label="Instagram">ig</a>
+            <a class="social-glass-link" href="#" aria-label="X">x</a>
+            <a class="social-glass-link" href="#" aria-label="YouTube">yt</a>
+          </div>
         </div>
-        <div class="field">
-          <input type="tel" id="phone" placeholder=" " required />
-          <label for="phone">Phone</label>
-        </div>
-        <div class="field">
-          <input type="email" id="email" placeholder=" " />
-          <label for="email">Email (optional)</label>
-        </div>
-        <div class="field">
-          <textarea id="message" rows="4" placeholder=" " required></textarea>
-          <label for="message">How can we help?</label>
-        </div>
-        <div class="form-actions">
-          <button type="submit" class="btn">Send Request</button>
-          <a class="btn outline" href="https://wa.me/263770000000?text=Hello%20Tinspol%20Motors%2C%20I%20need%20a%20quote." target="_blank" rel="noopener">WhatsApp</a>
-        </div>
-        <p class="muted">By submitting, you agree to be contacted regarding your request.</p>
-      </form>
-      <div class="map" aria-label="Google Map">
-        <iframe title="Tinspol Motors Location" src="https://www.google.com/maps?q=Harare%2C%20Zimbabwe&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="quick-icons">
-          <a class="qi" href="tel:+263770000000" title="Call">📞</a>
-          <a class="qi" href="https://wa.me/263770000000" target="_blank" rel="noopener" title="WhatsApp">💬</a>
-          <a class="qi" href="mailto:info@tinspolmotors.co.zw" title="Email">✉️</a>
-        </div>
+        <!-- Form -->
+        <form class="contact-form-glass" aria-label="Contact form">
+          <div class="form-glass-header">
+            <div class="form-icon">📝</div>
+            <h3 class="form-glass-title">Private Consultation Request</h3>
+            <p class="form-glass-description">Share your request and we'll respond promptly.</p>
+          </div>
+          <div class="form-group-glass">
+            <div class="input-glass-container">
+              <input type="text" placeholder="Full Name" required />
+            </div>
+          </div>
+          <div class="form-group-glass">
+            <div class="input-glass-container">
+              <input type="tel" placeholder="Phone" required />
+            </div>
+          </div>
+          <div class="form-group-glass">
+            <div class="input-glass-container">
+              <input type="email" placeholder="Email (optional)" />
+            </div>
+          </div>
+          <div class="form-group-glass">
+            <div class="input-glass-container">
+              <textarea rows="4" placeholder="How can we help?" required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="glass-submit-button">Submit Request</button>
+        </form>
+      </div>
+      <div class="container" style="margin-top:40px;">
+        <iframe title="Tinspol Location" src="https://www.google.com/maps?q=Harare%2C%20Zimbabwe&output=embed" loading="lazy" style="width:100%;height:360px;border:0;border-radius:16px;"></iframe>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>© <span id="year"></span> Tinspol Motors. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo"><img src="assets/img/logo.png" alt="Tinspol Motors" onerror="this.style.display='none'" /></div>
+        <nav class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#collection">Collection</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="X">x</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Tinspol Motors. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 

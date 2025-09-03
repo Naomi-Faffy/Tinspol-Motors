@@ -4,284 +4,176 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tinspol Motors — Precision. Performance. Perfection.</title>
-  <meta name="description" content="Luxury-inspired automotive repairs & servicing in Zimbabwe. Engine, suspension, tyres, panel beating, car wash, and genuine spares." />
-  <meta name="theme-color" content="#ffffff" />
+  <title>Tinspol Motors — Drive Precision. Live Exquisite.</title>
+  <meta name="description" content="Premium automotive repairs & servicing in Zimbabwe. Engine, suspension, tyres, panel beating, detailing, and genuine spares." />
+  <meta name="theme-color" content="#E30613" />
 
-  <!-- Preconnect for faster font loading -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@700;800&family=Open+Sans:wght@400;600&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
-
-  <!-- Preload hero poster for quick paint -->
-  <link rel="preload" as="image" href="assets/img/hero-poster.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="icon" href="assets/img/favicon.png" />
-
-  <!-- JSON-LD Schema for Local Business / AutoRepair -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AutoRepair",
-    "name": "Tinspol Motors",
-    "image": "assets/img/logo.png",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "ZW",
-      "addressLocality": "Harare",
-      "streetAddress": "",
-      "postalCode": ""
-    },
-    "url": "",
-    "telephone": "+263770000000",
-    "email": "info@tinspolmotors.co.zw",
-    "openingHours": "Mo-Fr 08:00-17:00, Sa 08:00-13:00",
-    "priceRange": "$$",
-    "sameAs": []
-  }
-  </script>
 </head>
-<body class="light">
-  <!-- Transparent/Glass Sticky Navigation -->
-  <header id="site-header" class="header glass">
-    <div class="container nav-container">
-      <a href="#top" class="logo" aria-label="Tinspol Motors Home">
-        <span class="logo-mark">TM</span>
-        <span class="logo-text">Tinspol Motors</span>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <button class="nav-toggle" id="navToggle" aria-label="Open Menu" aria-expanded="false">☰</button>
-        <ul class="nav-list" id="navList">
-          <li><a class="scroll" href="#services">Services</a></li>
-          <li><a class="scroll" href="#about">About</a></li>
-          <li><a class="scroll" href="#specials">Specials</a></li>
-          <li><a class="scroll" href="#showcase">Showcase</a></li>
-          <li><a class="scroll" href="#testimonials">Testimonials</a></li>
-          <li><a class="scroll" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="nav-ctas">
-        <a class="btn btn-red glow" href="#contact" aria-label="Get a Quote">Get a Quote</a>
-        <a class="btn btn-glass" href="#contact" aria-label="Book Service">Book Service</a>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <div class="brand">
+        <div class="brand-mark">TM</div>
+        <div class="brand-name">Tinspol Motors</div>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section (Video/Image with glass overlay) -->
-  <section id="top" class="hero" aria-label="Tinspol Motors Hero">
-    <div class="hero-media" data-parallax>
-      <video class="hero-video" autoplay muted loop playsinline poster="assets/img/hero-poster.jpg">
-        <source src="assets/video/hero.mp4" type="video/mp4" />
-        <img src="assets/img/placeholders.svg" alt="Tinspol Motors Hero" />
-      </video>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Drive Precision. Live Exquisite.</h1>
+      <p class="hero-sub">Experience premium automotive servicing — engineered for performance, finished to perfection.</p>
     </div>
-    <div class="container hero-content reveal">
-      <div class="glass hero-panel">
-        <h1 class="hero-title">PRECISION. PERFORMANCE. PERFECTION.</h1>
-        <p class="hero-subtitle">Your trusted one‑stop shop for automotive repairs, tyres, spares, and bodywork.</p>
-        <div class="hero-actions">
-          <a class="btn btn-red glow" href="#contact">Get a Quote</a>
-          <a class="btn btn-glass" href="#contact">Book Service</a>
+  </section>
+
+  <!-- Showcase (Exquisite-style grid cards) -->
+  <main class="container section">
+    <div class="grid">
+      <!-- Card 1 -->
+      <article class="card">
+        <img src="assets/img/hero-poster.jpg" alt="Precision Engine Diagnostics" />
+        <div class="card-body">
+          <h3>Engine Diagnostics & Rebuilds</h3>
+          <p>Sports Car Excellence</p>
+          <span class="tag">Available on Request</span>
         </div>
-      </div>
-      <div class="scroll-indicator" aria-hidden="true"><span></span></div>
-    </div>
-  </section>
-
-  <!-- Premium Services (Glass Cards) -->
-  <section id="services" class="section">
-    <div class="container">
-      <h2 class="section-title reveal">Premium Services</h2>
-      <p class="section-lead reveal">Engine to bodywork — curated by certified technicians.</p>
-      <div class="card-grid services-grid">
-        <article class="card glass reveal">
-          <div class="card-icon">🔧</div>
-          <h3>Engine Repairs</h3>
-          <p>Diagnostics, rebuilds, timing, and performance tuning.</p>
-          <a class="btn btn-glass btn-sm" href="#contact">Learn More</a>
-        </article>
-        <article class="card glass reveal">
-          <div class="card-icon">🛞</div>
-          <h3>Suspension Fitments</h3>
-          <p>Shocks, control arms, bushings, and alignment coordination.</p>
-          <a class="btn btn-glass btn-sm" href="#contact">Learn More</a>
-        </article>
-        <article class="card glass reveal">
-          <div class="card-icon">🧰</div>
-          <h3>Tyre Repairs</h3>
-          <p>Tyre patching, balancing, rotation, and new fitments.</p>
-          <a class="btn btn-glass btn-sm" href="#contact">Learn More</a>
-        </article>
-        <article class="card glass reveal">
-          <div class="card-icon">🛠️</div>
-          <h3>Panel Beating</h3>
-          <p>Bodywork restoration, paint matching, and dent removal.</p>
-          <a class="btn btn-glass btn-sm" href="#contact">Learn More</a>
-        </article>
-        <article class="card glass reveal">
-          <div class="card-icon">🚿</div>
-          <h3>Car Wash</h3>
-          <p>Detailing, interior deep‑clean, and exterior protection.</p>
-          <a class="btn btn-glass btn-sm" href="#contact">Learn More</a>
-        </article>
-        <article class="card glass reveal">
-          <div class="card-icon">🚗</div>
-          <h3>Spares & Body Parts</h3>
-          <p>Genuine OEM parts with warranty and fitment support.</p>
-          <a class="btn btn-glass btn-sm" href="#contact">Learn More</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- About (Video + Glass Text) -->
-  <section id="about" class="section">
-    <div class="container about-grid">
-      <div class="about-media glass reveal">
-        <video class="about-video" autoplay muted loop playsinline poster="assets/img/workshop-poster.jpg">
-          <source src="assets/video/workshop.mp4" type="video/mp4" />
-          <img src="assets/img/placeholders.svg" alt="Workshop" />
-        </video>
-      </div>
-      <div class="about-text glass reveal">
-        <h2 class="section-title">About Tinspol Motors</h2>
-        <p>We combine precision engineering with premium service. Our certified technicians use genuine OEM parts to deliver reliable, same‑day service on most jobs.</p>
-        <div class="trust">
-          <div class="trust-badge">✓ Certified Technicians</div>
-          <div class="trust-badge">🔩 Genuine Parts</div>
-          <div class="trust-badge">⚡ Same‑Day Service</div>
+      </article>
+      <!-- Card 2 -->
+      <article class="card">
+        <img src="assets/img/workshop-poster.jpg" alt="Suspension & Steering" />
+        <div class="card-body">
+          <h3>Suspension & Steering</h3>
+          <p>Luxury Ride Comfort</p>
+          <span class="tag">Available on Request</span>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Promotions / Specials (Glass Banners with Countdown) -->
-  <section id="specials" class="section">
-    <div class="container">
-      <h2 class="section-title reveal">Promotions & Specials</h2>
-      <div class="promo-grid">
-        <article class="promo-card glass glow reveal">
-          <div class="promo-badge">This Week Only</div>
-          <h3>Tyre Special — 20% Off</h3>
-          <p>Upgrade your grip and safety with premium tyres.</p>
-          <div class="countdown" data-deadline="2025-12-31T23:59:59+02:00" aria-live="polite"></div>
-          <a class="btn btn-red glow btn-sm" href="#contact">Claim Offer</a>
-        </article>
-        <article class="promo-card glass glow reveal">
-          <div class="promo-badge">Ends Friday</div>
-          <h3>Free Balancing with Fitment</h3>
-          <p>Book now and save on every tyre fitment.</p>
-          <div class="countdown" data-deadline="2025-10-31T23:59:59+02:00" aria-live="polite"></div>
-          <a class="btn btn-red glow btn-sm" href="#contact">Claim Offer</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Before & After Showcase (Drag Slider) -->
-  <section id="showcase" class="section">
-    <div class="container">
-      <h2 class="section-title reveal">Before & After Showcase</h2>
-      <div class="filters reveal" role="tablist" aria-label="Filter showcase by service">
-        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
-        <button class="filter-btn" data-filter="panel" role="tab">Panel Beating</button>
-        <button class="filter-btn" data-filter="tyres" role="tab">Tyres</button>
-        <button class="filter-btn" data-filter="suspension" role="tab">Suspension</button>
-      </div>
-
-      <div class="ba-wrapper glass reveal" data-category="panel">
-        <img class="ba-img ba-before" src="assets/img/before.jpg" alt="Before repair" loading="lazy" />
-        <img class="ba-img ba-after" src="assets/img/after.jpg" alt="After repair" loading="lazy" />
-        <div class="ba-overlay ba-label before">Before</div>
-        <div class="ba-overlay ba-label after">After</div>
-        <div class="ba-handle" id="baHandle"><span>⇆</span></div>
-      </div>
-
-      <!-- Lightbox Container -->
-      <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
-        <button class="lightbox-close" aria-label="Close">✕</button>
-        <img id="lightboxImg" alt="" />
-        <figcaption id="lightboxCaption" class="small"></figcaption>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials (Glass Cards Slider) -->
-  <section id="testimonials" class="section">
-    <div class="container">
-      <h2 class="section-title reveal">What Our Customers Say</h2>
-      <div class="slider reveal" aria-roledescription="carousel" aria-label="Customer testimonials">
-        <div class="slides" id="testimonialSlides">
-          <figure class="t-card glass slide active">
-            <img class="avatar" src="assets/img/avatar1.jpg" alt="Customer photo" loading="lazy" onerror="this.src='assets/img/placeholders.svg'" />
-            <blockquote>
-              <p>“The car looks factory fresh. Outstanding service!”</p>
-              <footer>— Tariro M. ★★★★★</footer>
-            </blockquote>
-          </figure>
-          <figure class="t-card glass slide">
-            <img class="avatar" src="assets/img/avatar2.jpg" alt="Customer photo" loading="lazy" onerror="this.src='assets/img/placeholders.svg'" />
-            <blockquote>
-              <p>“Professional, transparent, and fast turnaround.”</p>
-              <footer>— Bheki N. ★★★★★</footer>
-            </blockquote>
-          </figure>
-          <figure class="t-card glass slide">
-            <img class="avatar" src="assets/img/avatar3.jpg" alt="Customer photo" loading="lazy" onerror="this.src='assets/img/placeholders.svg'" />
-            <blockquote>
-              <p>“Genuine parts with great workmanship. Highly recommend.”</p>
-              <footer>— Nyasha K. ★★★★★</footer>
-            </blockquote>
-          </figure>
+      </article>
+      <!-- Card 3 -->
+      <article class="card">
+        <img src="assets/img/before.jpg" alt="Panel Beating Before" />
+        <div class="card-body">
+          <h3>Panel Beating & Paint</h3>
+          <p>Factory Finish</p>
+          <span class="tag">Available on Request</span>
         </div>
-        <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Select testimonial"></div>
-      </div>
+      </article>
+      <!-- Card 4 -->
+      <article class="card">
+        <img src="assets/img/after.jpg" alt="Panel Beating After" />
+        <div class="card-body">
+          <h3>Body Restoration</h3>
+          <p>Luxury & Power</p>
+          <span class="tag">Available on Request</span>
+        </div>
+      </article>
+      <!-- Card 5 -->
+      <article class="card">
+        <img src="assets/img/placeholders.svg" alt="Tyre Fitment & Balancing" />
+        <div class="card-body">
+          <h3>Tyre Fitment & Balancing</h3>
+          <p>Performance & Safety</p>
+          <span class="tag">Available on Request</span>
+        </div>
+      </article>
+      <!-- Card 6 -->
+      <article class="card">
+        <img src="assets/img/placeholders.svg" alt="Detailing & Protection" />
+        <div class="card-body">
+          <h3>Detailing & Protection</h3>
+          <p>Elite Finish</p>
+          <span class="tag">Available on Request</span>
+        </div>
+      </article>
+      <!-- Card 7 -->
+      <article class="card">
+        <img src="assets/img/placeholders.svg" alt="Genuine Spares" />
+        <div class="card-body">
+          <h3>Genuine OEM Spares</h3>
+          <p>Guaranteed Quality</p>
+          <span class="tag">Available on Request</span>
+        </div>
+      </article>
+      <!-- Card 8 -->
+      <article class="card">
+        <img src="assets/img/placeholders.svg" alt="Full Service Packages" />
+        <div class="card-body">
+          <h3>Full Service Packages</h3>
+          <p>Tailored to Your Vehicle</p>
+          <span class="tag">Available on Request</span>
+        </div>
+      </article>
     </div>
+  </main>
+
+  <!-- Three Feature Blocks (mirrors Exquisite info blocks) -->
+  <section class="container section features">
+    <article>
+      <h3>Certified Expertise</h3>
+      <p>Access to certified technicians using genuine OEM parts and advanced diagnostics. Every repair targets factory standards.</p>
+    </article>
+    <article>
+      <h3>Tailored Services</h3>
+      <p>Personalized consultation, prioritized scheduling, and white-glove service. Pick-up and delivery available on request.</p>
+    </article>
+    <article>
+      <h3>Trusted Nationwide</h3>
+      <p>Serving discerning clients across Zimbabwe with transparent quotes, warranty-backed work, and reliable turnaround times.</p>
+    </article>
   </section>
 
-  <!-- CTA Strip (Glass) -->
-  <section class="cta-strip">
-    <div class="container cta-container glass">
-      <h2>Book Your Service Today — Fast. Reliable. Guaranteed.</h2>
-      <div class="cta-actions">
-        <a class="btn btn-red glow" href="#contact">Get a Quote</a>
-        <a class="btn btn-glass" href="tel:+263770000000">Call Now</a>
-        <a class="btn btn-glass" href="https://wa.me/263770000000?text=Hello%20Tinspol%20Motors%2C%20I%20would%20like%20to%20book%20a%20service." target="_blank" rel="noopener">WhatsApp Us</a>
-      </div>
-    </div>
+  <!-- Testimonials (short quotes like reference) -->
+  <section class="container section quotes">
+    <blockquote>
+      <p>“The car looks factory fresh. Outstanding service!”</p>
+      <footer>— Tariro M.</footer>
+    </blockquote>
+    <blockquote>
+      <p>“Professional, transparent, and fast turnaround.”</p>
+      <footer>— Bheki N.</footer>
+    </blockquote>
+    <blockquote>
+      <p>“Genuine parts with great workmanship. Highly recommend.”</p>
+      <footer>— Nyasha K.</footer>
+    </blockquote>
   </section>
 
-  <!-- Contact & Location (Glass Form + Map) -->
-  <section id="contact" class="section">
-    <div class="container contact-grid">
-      <form class="contact-form glass reveal" aria-label="Contact form">
-        <h2 class="section-title">Contact & Location</h2>
+  <!-- Contact & Map (kept from Tinspol) -->
+  <section id="contact" class="container section contact">
+    <div class="contact-grid">
+      <form class="contact-form" aria-label="Contact form">
+        <h2>Contact & Location</h2>
         <div class="field">
-          <input type="text" id="name" required />
+          <input type="text" id="name" placeholder=" " required />
           <label for="name">Full Name</label>
         </div>
         <div class="field">
-          <input type="tel" id="phone" required />
+          <input type="tel" id="phone" placeholder=" " required />
           <label for="phone">Phone</label>
         </div>
         <div class="field">
-          <input type="email" id="email" />
+          <input type="email" id="email" placeholder=" " />
           <label for="email">Email (optional)</label>
         </div>
         <div class="field">
-          <textarea id="message" rows="4" required></textarea>
+          <textarea id="message" rows="4" placeholder=" " required></textarea>
           <label for="message">How can we help?</label>
         </div>
         <div class="form-actions">
-          <button type="submit" class="btn btn-red glow">Send Request</button>
-          <a class="btn btn-glass" href="https://wa.me/263770000000?text=Hello%20Tinspol%20Motors%2C%20I%20need%20a%20quote." target="_blank" rel="noopener">WhatsApp</a>
+          <button type="submit" class="btn">Send Request</button>
+          <a class="btn outline" href="https://wa.me/263770000000?text=Hello%20Tinspol%20Motors%2C%20I%20need%20a%20quote." target="_blank" rel="noopener">WhatsApp</a>
         </div>
-        <p class="small">By submitting, you agree to be contacted regarding your request.</p>
+        <p class="muted">By submitting, you agree to be contacted regarding your request.</p>
       </form>
-      <div class="map glass reveal" aria-label="Google Map">
+      <div class="map" aria-label="Google Map">
         <iframe title="Tinspol Motors Location" src="https://www.google.com/maps?q=Harare%2C%20Zimbabwe&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <img src="assets/img/placeholders.svg" alt="Map placeholder" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;pointer-events:none;" />
         <div class="quick-icons">
           <a class="qi" href="tel:+263770000000" title="Call">📞</a>
           <a class="qi" href="https://wa.me/263770000000" target="_blank" rel="noopener" title="WhatsApp">💬</a>
@@ -291,28 +183,15 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container footer-container">
-      <p>© <span id="currentYear"></span> Tinspol Motors. All rights reserved.</p>
-      <nav class="footer-nav" aria-label="Footer">
-        <a class="scroll" href="#services">Services</a>
-        <a class="scroll" href="#about">About</a>
-        <a class="scroll" href="#specials">Specials</a>
-        <a class="scroll" href="#contact">Contact</a>
-      </nav>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Tinspol Motors. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/263770000000?text=Hello%20Tinspol%20Motors%2C%20I%20would%20like%20to%20book%20a%20service." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
-
-  <!-- Sticky Mobile CTA Bar (Glass) -->
-  <div class="mobile-cta glass" role="region" aria-label="Quick Actions">
-    <a href="tel:+263770000000">Call</a>
-    <a href="https://wa.me/263770000000?text=Hello%20Tinspol%20Motors%2C%20I%20need%20help%20with%20my%20car." target="_blank" rel="noopener">WhatsApp</a>
-    <a class="scroll" href="#contact">Get Quote</a>
-  </div>
-
-  <script src="assets/js/main.js" defer></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

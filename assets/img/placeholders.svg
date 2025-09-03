@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e9e9e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <rect x="40" y="40" width="1520" height="820" rx="24" fill="#ffffff" opacity="0.6"/>
+  <g font-family="Poppins, Montserrat, Arial" text-anchor="middle" fill="#000">
+    <text x="800" y="430" font-size="60" font-weight="800">Tinspol Motors</text>
+    <text x="800" y="500" font-size="32" font-weight="700" fill="#E30613">PRECISION. PERFORMANCE. PERFECTION.</text>
+  </g>
+</svg>
